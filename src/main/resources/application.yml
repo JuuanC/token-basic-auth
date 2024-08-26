@@ -1,0 +1,16 @@
+mp:
+ jwt:
+  verify:
+   publickey:
+    location: publicKey.pem
+    algorithm: RS256
+
+smallrye:
+ jwt:
+  verify:
+   key-format: PEM_KEY
+  require:
+   named-principal: false
+quarkus:
+ log:
+  level: ALL
